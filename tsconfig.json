@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "allowJs": true,
+    "target": "es6",
+    "declaration": true,
+//    "emitDeclarationOnly": true,
+    "sourceMap": true,
+  },
+  "include": ["./src/**/*"],
+
+
+  "typedocOptions": {
+    "entryPoints": ["./src"],
+    "out": "doc",
+    "disableSources" : true,
+    "entryPointStrategy": "Expand",
+    "excludeInternal" : true,
+    "exclude" : [
+      "./src/internal/**/*"
+    ]
+  }
+}

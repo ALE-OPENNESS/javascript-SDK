@@ -1,0 +1,28 @@
+{
+  "name": "o2g-sdk",
+  "version": "1.0.0",
+  "description": "A javascript SDK for ALE O2G",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "o2g",
+    "alcatel",
+    "sdk"
+  ],
+  "author": "fredmab",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.0.0",
+    "typedoc": "^0.22.15",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "source-map-loader": "^3.0.1",
+    "ts-loader": "^9.3.0"
+  }
+}
