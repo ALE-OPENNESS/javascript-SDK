@@ -8,11 +8,24 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALE-OPENNESS/javascript-SDK.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ALE-OPENNESS/javascript-SDK/issues"
+  },
+  "homepage": "https://github.com/ALE-OPENNESS/javascript-SDK#readme",
   "keywords": [
     "o2g",
     "alcatel",
     "sdk"
   ],
+  "files": [
+    "public/dist/*",
+    "build/**/*"
+  ],
+  "main": "public/dist/o2g-sdk.min.js",
   "author": "fredmab",
   "license": "MIT",
   "devDependencies": {

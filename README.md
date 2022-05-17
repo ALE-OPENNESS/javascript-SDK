@@ -6,7 +6,7 @@ It provides access to all the services available in O2G.
 To connect to an O2G server, you create an O2G application, use your credential to connect and use services.
 
 ## Installation
-o2g javascript SDK is available oas npm package.
+o2g javascript SDK is available as npm package.
 
 ## Usage
 ```java
