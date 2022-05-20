@@ -1,8 +1,8 @@
 {
   "name": "o2g-sdk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A javascript SDK for ALE O2G",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
@@ -22,20 +22,21 @@
     "sdk"
   ],
   "files": [
-    "public/dist/*",
-    "build/**/*"
+    "dist/*",
+    "types/**/*"
   ],
-  "main": "public/dist/o2g-sdk.min.js",
+  "main": "dist/o2g-sdk.min.js",
+  "types": "./types/o2g-sdk.d.ts",
   "author": "fredmab",
   "license": "MIT",
   "devDependencies": {
     "http-server": "^14.0.0",
     "typedoc": "^0.22.15",
     "webpack": "^5.64.2",
-    "webpack-cli": "^4.9.1"
-  },
-  "dependencies": {
+    "webpack-cli": "^4.9.1",
     "source-map-loader": "^3.0.1",
     "ts-loader": "^9.3.0"
+  },
+  "dependencies": {
   }
 }

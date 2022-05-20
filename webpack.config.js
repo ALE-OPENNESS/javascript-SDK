@@ -4,11 +4,14 @@ module.exports = {
     entry: path.resolve(__dirname, './src/o2g-sdk.ts'),
     output: {
         filename: 'o2g-sdk.min.js',
-        path: path.resolve(__dirname, 'public/dist'),
+        path: path.resolve(__dirname, 'dist'),
         library: {
-            name : "o2g",
-            type: "umd"
+//            name : "o2g",
+            type: "module"
         }
+    },
+    experiments: {
+        outputModule: true,
     },
     devtool: "source-map",
     resolve: {

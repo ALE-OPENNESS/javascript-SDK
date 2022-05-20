@@ -220,7 +220,7 @@ function initialize(appName: string, host: Host, apiVersion: string = "1.0") {
  * ```
  * @param subscription the subscription
  */
-async function subscribe(subscription: Subscription) {
+async function subscribe(subscription: Subscription): Promise<void> {
     await _application.subscribe(subscription);
 }
 
@@ -249,7 +249,7 @@ async function subscribe(subscription: Subscription) {
  * @param loginName The user or administrator login name.
  * @param password The user or administrator password.
  */
-async function login(loginName: string, password: string) {
+async function login(loginName: string, password: string): Promise<void>  {
     try {
         await _application.login(loginName, password);
 
@@ -279,7 +279,7 @@ async function login(loginName: string, password: string) {
 /**
  * Terminates the application. Dispose all used ressources.
  */
-async function shutdown() {
+async function shutdown(): Promise<void>  {
     await _application.close();
 }
 
@@ -360,7 +360,7 @@ var types = {
 };
 
 
-export { 
+export var o2g = { 
     load, 
     shutdown, 
     login, 
