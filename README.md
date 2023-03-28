@@ -169,7 +169,7 @@ var  onLoginFailed = function  onLoginFailed() {
 
 document.addEventListener(o2g.O2G_ONLOADED, onLoaded);
 document.addEventListener(o2g.O2G_ONLOGIN_FAILED, onLoginFailed);
-document.addEventListener(o2g.O2G_ONLOADED, onLoaded);
+document.addEventListener(o2g.O2G_ONLOGIN_SUCCEEDED, onLoginSucceeded);
 o2g.load();
 ```
 Go back to your browser and refresh the page. 
